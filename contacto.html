@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto — Proyecto IA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="chatgpt.html">ChatGPT</a>
+    <a href="claude.html">Claude</a>
+    <a href="deepseek.html">DeepSeek</a>
+    <a href="qwen.html">Qwen</a>
+  </nav>
+
+  <div class="submenu">
+    <a href="#form">Formulario</a>
+    <a href="#info">Información</a>
+  </div>
+
+  <section class="gradiente">
+    <div class="contenido" id="info">
+      <h1>Contacto</h1>
+      <p>Si tienes dudas, colabora o quieres proponer contenido, completa el formulario.</p>
+    </div>
+
+    <div class="contenido" id="form">
+      <form class="formulario" action="#" method="post" aria-label="Formulario de contacto">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre">
+
+        <label for="email">Correo institucional</label>
+        <input id="email" name="email" type="email" required placeholder="tu.correo@institucion.edu.mx">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <a class="regresar" href="index.html">⬅ Regresar al inicio</a>
+
+  <div class="confeti" aria-hidden="true"></div>
+  <script>
+    (function makeConfetti(){
+      const n = 60;
+      const container = document.querySelector('.confeti');
+      for(let i=0;i<n;i++){
+        const s = document.createElement('span');
+        s.className = 'confetti-piece';
+        s.style.left = Math.random()*100 + 'vw';
+        s.style.setProperty('--h', Math.floor(Math.random()*360));
+        s.style.animationDelay = (Math.random()*3) + 's';
+        container.appendChild(s);
+      }
+    })();
+  </script>
+</body>
+</html>

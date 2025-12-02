@@ -1,0 +1,226 @@
+/* ========== Tipografía y reset básico ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; padding:0; }
+body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #7e360d;
+  color: #ffffff;
+  line-height: 1.4;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* ========== Header ========== */
+.site-header {
+  text-align: center;
+  padding: 36px 16px 8px;
+}
+.site-title { margin:0; font-size: 28px; font-weight:700; letter-spacing: -0.4px; }
+.autor { margin:6px 0 0; opacity:0.85; font-size:14px; }
+
+/* ========== Social bar ========== */
+.social-bar {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  justify-content:center;
+  align-items:center;
+  padding:12px;
+  margin-bottom:8px;
+}
+.social-bar a {
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:8px;
+  background: rgba(255,255,255,0.03);
+  color: #f5f5f5;
+  text-decoration:none;
+  font-weight:600;
+  transition: transform .22s ease, background .22s ease, color .22s ease;
+}
+.social-bar a:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: linear-gradient(90deg,#ffdf70,#ff9b6a);
+  color: #111;
+}
+
+/* ========== Banner animado (cambio de fondo dinámico) ========== */
+.banner-animado {
+  text-align:center;
+  padding:36px 18px;
+  margin: 12px auto;
+  border-radius: 12px;
+  max-width: 1100px;
+  color: #fff;
+  background: linear-gradient(270deg,#ff8b1e,#ff9743,#ff683a,#ca7953);
+  background-size: 800% 800%;
+  animation: gradientShift 12s ease infinite;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+}
+.banner-animado h2 { margin:0 0 6px; font-size:20px; }
+.banner-sub { margin:0; opacity:0.9; font-size:14px; }
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* ========== Cards (secciones principales) ========== */
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:22px;
+  padding: 28px 16px 56px;
+  max-width:1100px;
+  margin: 0 auto;
+}
+.card {
+  width: 240px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius:12px;
+  padding:18px;
+  text-align:center;
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+}
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255,221,85,0.9);
+  box-shadow: 0 18px 40px rgba(7,11,20,0.7);
+}
+.card h3 { margin: 6px 0 8px; font-size:18px; }
+.card p { margin:0; font-size:14px; color: #dfe6ef; }
+
+/* Card link makes whole card clickable */
+.card-link { color:inherit; text-decoration:none; display:block; }
+
+/* ========== Footer ========== */
+.site-footer {
+  text-align:center;
+  padding:18px 12px;
+  opacity:0.85;
+  border-top: 1px solid rgba(255, 172, 104, 0.87);
+}
+
+/* ========== Navigation & Submenu (para páginas secundarias) ========== */
+nav {
+  background:#0b0f14;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  padding:12px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+}
+nav a { color:#fff; text-decoration:none; font-weight:600; padding:8px 10px; border-radius:8px; }
+nav a:hover { color:#111; background: linear-gradient(90deg,#ffdf70,#ff9b6a); }
+
+/* Submenu style */
+.submenu { text-align:center; margin:14px 0; }
+.submenu a { color:#ffdf70; text-decoration:none; margin:0 8px; font-weight:600; }
+.submenu a:hover { color:#fff; }
+
+/* ========== Contenido, imágenes y video ========== */
+.contenido {
+  width: 92%;
+  max-width: 920px;
+  margin: 12px auto 28px;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.02);
+}
+.contenido h1 { margin-top:0; }
+.contenido img, .contenido video {
+  width:100%;
+  height:auto;
+  margin: 12px 0;
+  border-radius:10px;
+  border: 1px solid rgba(253, 119, 41, 0.945);
+  display:block;
+}
+
+/* ========== Gradiente de secciones secundarias ========== */
+.gradiente {
+  background: linear-gradient(135deg,#462d1f,#55321e);
+  padding: 18px 0 36px;
+}
+
+/* ========== Formulario de contacto ========== */
+.formulario {
+  width: 90%;
+  max-width: 520px;
+  margin: 10px auto 26px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.formulario label { font-weight:600; font-size:14px; }
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+  color: #fff;
+  outline:none;
+  transition: box-shadow .18s ease, border-color .18s ease;
+}
+.formulario input:focus, .formulario textarea:focus {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  border-color: rgba(255,221,85,0.9);
+}
+.formulario button {
+  padding:10px 14px;
+  border-radius:8px;
+  border:none;
+  font-weight:700;
+  cursor:pointer;
+  background: linear-gradient(90deg,#ffdf70,#ff9b6a);
+  color:#111;
+  transition: transform .12s ease;
+}
+.formulario button:hover { transform: translateY(-3px); }
+
+/* ========== Regresar (link) ========== */
+.regresar {
+  display:block;
+  text-align:center;
+  padding:12px 0;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* ========== Confeti ========== */
+.confeti { position: fixed; inset:0; pointer-events:none; overflow:hidden; z-index:1000; }
+.confetti-piece {
+  position: absolute;
+  top: -6vh;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: hsl(var(--h), 90%, 60%);
+  opacity: 0.95;
+  transform: translateY(-10vh) rotate(0deg);
+  animation: caer 4s linear infinite;
+}
+@keyframes caer {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity:1; }
+  100% { transform: translateY(120vh) rotate(540deg); opacity:0.9; }
+}
+
+/* ========== Responsive ========== */
+@media (max-width:800px){
+  .cards { gap:14px; padding:18px; }
+  .card { width:calc(50% - 20px); }
+}
+@media (max-width:480px){
+  .card { width:100%; }
+  nav { flex-wrap:wrap; gap:8px; padding:10px; }
+}

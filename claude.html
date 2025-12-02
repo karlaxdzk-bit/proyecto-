@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Claude — Modelos de IA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="chatgpt.html">ChatGPT</a>
+    <a href="claude.html">Claude</a>
+    <a href="deepseek.html">DeepSeek</a>
+    <a href="qwen.html">Qwen</a>
+  </nav>
+
+  <div class="submenu">
+    <a href="#descripcion">Descripción</a>
+    <a href="#media">Multimedia</a>
+  </div>
+
+  <section class="gradiente">
+    <div class="contenido" id="descripcion">
+      <h1>limousin</h1>
+      <p>su nombre proviene de su lugar de origen limogues francia </p>
+    </div>
+
+    <div class="contenido" id="media">
+      <h2>Imágenes</h2>
+      <img src="l.jpg" alt="Imagen Claude 1">
+      <img src="ll.jpg" alt="Imagen Claude 2">
+      <img src="lll.jpg" alt="Imagen Claude 3">
+
+      <h2>Video</h2>
+      <iframe width="560" height="315" src="https://rr1---sn-uvu5a2a5t-hxmed.googlevideo.com/videoplayback?expire=1764726894&ei=DkQvaYq8M-rBsfIP-9LUiAU&ip=2a0f%3A85c1%3Aba5%3A5397%3A6c13%3Aaa2b%3A5b1f%3Aa04f&id=o-AFvkSyCpRoKz4um_9nIH0BTLNWgn2BwtabTr4eIoczCo&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=0&rms=au%2Cau&bui=AdEuB5SHm2kUiYrL_sTA_Ix3vEUn7mwV3FbPplXnkGZAor5Jry5fBxW5Q1jCp4idc2pdPXrAA1YhR3dK&vprv=1&svpuc=1&mime=video%2Fmp4&ns=wW7pmQZ3Ipmh0m3Y7ST8iRsQ&rqh=1&cnr=14&ratebypass=yes&dur=615.282&lmt=1698205415636363&lmw=1&fexp=51557447,51565115,51565681,51580970&c=TVHTML5&sefc=1&txp=6308224&n=hhsQmBAuhK9y_w&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgSYLFPaNn8AbWBlXp7bGDwkJAF6nxihYq9s03-WhmkT8CIQDBKQEEDhAI4a8Qsv8ZxmpiwLGvOJYCoLGl7eAjZHoXSA%3D%3D&redirect_counter=1&rm=sn-a5me777s&rrc=104&req_id=85abb296dc4da3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&met=1764705299,&mh=XI&mip=187.251.123.162&mm=31&mn=sn-uvu5a2a5t-hxmed&ms=au&mt=1764704970&mv=m&mvi=1&pcm2cms=yes&pl=24&lsparams=cps,ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl,rms&lsig=APaTxxMwRgIhAJm-HbfeLbWFEC_YwedcGe626Zcek2CFYUd8uMLkDr2oAiEAjWWHbBJ-czsflbdeHdd9ZfXGV6FpWw_EC2ybIRw0OsQ%3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      </video>
+    </div>
+  </section>
+
+  <a class="regresar" href="index.html">⬅ Regresar</a>
+
+  <div class="confeti" aria-hidden="true"></div>
+  <script>
+    (function makeConfetti(){
+      const n = 60;
+      const container = document.querySelector('.confeti');
+      for(let i=0;i<n;i++){
+        const s = document.createElement('span');
+        s.className = 'confetti-piece';
+        s.style.left = Math.random()*100 + 'vw';
+        s.style.setProperty('--h', Math.floor(Math.random()*360));
+        s.style.animationDelay = (Math.random()*3) + 's';
+        container.appendChild(s);
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<html lang="es">
+<link rel="stylesheet" href="style.css" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🐮</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">🐄VACAS🐄</h1>
+      <p class="autor">Mendoza Ortiz Karla Angelica · angelica.mendoza@estidiantxs.uacm.edu.mx</p>
+    </div>
+  </header>
+
+  <!-- Barra social + ubicación + enlace a contacto -->
+  <div class="social-bar" role="navigation" aria-label="Enlaces sociales">
+    <a class="social" href="https://www.facebook.com/AGROPECUARIOS23042020/" target="_blank" rel="noopener">Facebook</a>
+        <a class="social" href="https://www.instagram.com/popular/las-vacas/" target="_blank" rel="noopener">Instagram</a>
+
+    <a class="social" href="https://mx.pinterest.com/mamism/vacas/" target="_blank" rel="noopener">Pinterest</a>
+    <a class="social" href="https://www.youtube.com/watch?v=mlrfjzABdmY" target="_blank" rel="noopener">YouTube</a>
+    <a class="social" href="https://www.tiktok.com/@diegomartinezbovinos/video/7531547709098986808" target="_blank" rel="noopener">TikTok</a>
+
+    <!-- ubicación institucional -->
+    <a class="ubicacion" href="https://maps.app.goo.gl/sAF1EFK6EuWPoEGQA" target="_blank" rel="noopener" title="Ubicación institucional">📍 Rancho Jesus</a>
+
+    <!-- link al formulario de contacto -->
+    <a class="info" href="contacto.html" title="Formulario de contacto">ℹ Contacto</a>
+  </div>
+
+  <!-- Banner con animación de colores -->
+  <section class="banner-animado" aria-hidden="false">
+    <h2>Bienvenido al mundo de las vacas</h2>
+    <p class="banner-sub">conoce los diferentes tipos de vacasd</p>
+  </section>
+
+  <!-- Secciones principales (mínimo 4) -->
+  <main>
+    <section class="cards" aria-label="Secciones principales">
+      <article class="card" id="chatgpt-card">
+        <a class="card-link" href="chatgpt.html">
+          <h3>ANGUS</h3>
+          <p>Aberdeen Angus.</p>
+        </a>
+      </article>
+
+      <article class="card" id="claude-card">
+        <a class="card-link" href="claude.html">
+          <h3>limousin</h3>
+          <p>francia</p>
+        </a>
+      </article>
+
+      <article class="card" id="deepseek-card">
+        <a class="card-link" href="deepseek.html">
+          <h3>GALLOWAY</h3>
+          <p>Sureste de Escocia</p>
+        </a>
+      </article>
+
+      <article class="card" id="qwen-card">
+        <a class="card-link" href="qwen.html">
+          <h3>CHILLINGHAM</h3>
+          <p>Costa de Northumberland.</p>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 · Proyecto académico — Vacas</p>
+  </footer>
+
+  <!-- Confeti (se declara una sola vez y funciona en todas las páginas cuando se pega) -->
+  <div class="confeti" aria-hidden="true"></div>
+  <script>
+    // Generador de confeti: crea elementos <span> con posiciones aleatorias
+    (function makeConfetti(){
+      const n = 60;
+      for(let i=0;i<n;i++){
+        const s = document.createElement('span');
+        s.className = 'confetti-piece';
+        s.style.left = Math.random()*100 + 'vw';
+        s.style.setProperty('--h', Math.floor(Math.random()*360));
+        s.style.animationDelay = (Math.random()*3) + 's';
+        document.querySelector('.confeti').appendChild(s);
+      }
+    })();
+  </script>
+</body>
+</html>

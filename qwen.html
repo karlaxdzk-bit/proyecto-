@@ -1,0 +1,62 @@
+Q<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Qwen — Modelos de IA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="chatgpt.html">ChatGPT</a>
+    <a href="claude.html">Claude</a>
+    <a href="deepseek.html">DeepSeek</a>
+    <a href="qwen.html">Qwen</a>
+  </nav>
+
+  <div class="submenu">
+    <a href="#intro">Introducción</a>
+    <a href="#media">Imágenes y Video</a>
+  </div>
+
+  <section class="gradiente">
+    <div class="contenido" id="intro">
+      <h1>CHILLINGHAM</h1>
+      <p>Son agresivas, pelan para imponer dominio con toros .</p>
+    </div>
+
+    <div class="contenido" id="media">
+      <h2>Imágenes</h2>
+      <img src="c,jpg.jpg" alt="Qwen 1">
+      <img src="cc.jpg" alt="Qwen 2">
+      <img src="ccc.jpg" alt="Qwen 3">
+
+      <h2>Video</h2>
+      <video controls>
+        <source src="https://rr4---sn-q4fl6nz7.googlevideo.com/videoplayback?expire=1764727762&ei=ckcvabyhBpmXsfIP9ri-mAU&ip=185.216.107.195&id=o-AJUmQHtlioP4XYxu3lDcj2_2Se_EU-ZN2KsQxne9STax&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AdEuB5SBcSjiRcbpEdAFkymdCXAxmJZeI6DHzBtUX8iu8S_idKjFyXR5dmmTfM6-KBhk_nnZCTnEOjWN&spc=6b0G_FtRCKkuUYcYILkSPgGpb__o9RBKTrcXt6dYAKChF9YQzl2GfFzdOobXB2_89iU&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=22.662&lmt=1691612018486688&fexp=51514994,51552689,51565115,51565682,51580968&c=ANDROID&txp=6219224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAOD8773mIHOvKP0hTCMJarxcxq7pwiEfKIsGTkAUFRF_AiEA1Bfxhc4HKC-Y2kJ3xzLK0uBymCdEDU0cYFit95vO0jY%3D&rm=sn-o09sk7e&rrc=104,191,191&req_id=a3fa65048e9ea3ee&cps=0&ipbypass=yes&cm2rm=sn-uvu5a2a5t-hxmlz7l,sn-9gvsl7s&redirect_counter=3&cms_redirect=yes&cmsv=e&met=1764706169,&mh=xc&mip=187.251.123.162&mm=34&mn=sn-q4fl6nz7&ms=ltu&mt=1764705878&mv=m&mvi=4&pl=24&lsparams=cps,ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgIs075wEaLXV8mhWseP4pOVmjYQGd0UMGJw-9HgfqCDkCIQDMV9dDgKSjUE8Hl4t_KpO0l2KbBjLT6iSkIEIznMaCRw%3D%3D" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+  </section>
+
+  <a class="regresar" href="index.html">⬅ Regresar</a>
+
+  <div class="confeti" aria-hidden="true"></div>
+  <script>
+    (function makeConfetti(){
+      const n = 60;
+      const container = document.querySelector('.confeti');
+      for(let i=0;i<n;i++){
+        const s = document.createElement('span');
+        s.className = 'confetti-piece';
+        s.style.left = Math.random()*100 + 'vw';
+        s.style.setProperty('--h', Math.floor(Math.random()*360));
+        s.style.animationDelay = (Math.random()*3) + 's';
+        container.appendChild(s);
+      }
+    })();
+  </script>
+</body>
+</html>

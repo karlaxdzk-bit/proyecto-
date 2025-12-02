@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Angus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="chatgpt.html">ChatGPT</a>
+    <a href="claude.html">Claude</a>
+    <a href="deepseek.html">DeepSeek</a>
+    <a href="qwen.html">Qwen</a>
+  </nav>
+
+  <div class="submenu">
+    <a href="#info">Información</a>
+    <a href="#galeria">Galería</a>
+    <a href="#video">Video</a>
+  </div>
+
+  <section class="gradiente">
+    <div class="contenido" id="info">
+      <h1>ANGUS</h1>
+      <p>Reconocida por la capicidad de parir facilmente.</p>
+    </div>
+
+    <div class="contenido" id="galeria">
+      <h2>Imágenes</h2>
+      <img src="AA.JPG" alt="Ejemplo 1 ChatGPT">
+      <img src="AAA.JPG" alt="Ejemplo 2 ChatGPT">
+      <img src="VA.JPG" alt="Ejemplo 3 ChatGPT">
+    </div>
+
+    <div class="contenido" id="video">
+      <h2>Video explicativo</h2>
+      <video controls>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WICOQEn4TiI?si=is2FYyl-yv8DVbqB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <source src="https://rr5---sn-uvu5a2a5t-hxmle.googlevideo.com/videoplayback?expire=1764726493&ei=fUIvacvFMuaWsfIPt8Wq8As&ip=2a0f%3A85c1%3Aba5%3A764e%3A8bbe%3Aeacf%3A642e%3Ab72e&id=o-AMLcHRaOuMgYsnX-inaKtrwXjbSOLTZAmrSuP4bhgWYS&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=0&rms=au%2Cau&bui=AdEuB5RrOn3Gr88vyWGiCPEO826LLz33L-Ng6Z42ylasciYjiJPtsoOYDnLvIN4hcBzZ3v3LRHf4G6s0&spc=6b0G_PqB0aoVvWlXFfwesXFILVUJwQI0pdL17c1yFOjf-D_cPq0e&vprv=1&svpuc=1&mime=video%2Fmp4&ns=MfwwcZmRWTy6bmcml17e_WQQ&rqh=1&gir=yes&clen=45597026&ratebypass=yes&dur=549.175&lmt=1757997162714395&lmw=1&fexp=51557447,51565116,51565682,51580970,51673547,51673548&c=TVHTML5&sefc=1&txp=6318224&n=LS3eDpkB9cZpBw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgMqvCPlLO_8P7Vi23VAsMoLjfGMRH_cMbkujUB_DgNmMCIQDrJYnwfBVdsqDuRrqSKAgng0peWIrvA7lxQ4SjX5k2fg%3D%3D&redirect_counter=1&rm=sn-a5meed7l&rrc=104&req_id=e6419b04a01fa3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&met=1764704903,&mh=t2&mip=187.251.123.162&mm=31&mn=sn-uvu5a2a5t-hxmle&ms=au&mt=1764704481&mv=m&mvi=5&pl=24&lsparams=cps,ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgHGoZaXkim5xkcphjEyB7uWBxKTh0FtZQq--fYNLjiyMCIAo1ACVbn4Zkw-9dJE_rciGWYzK8hesiXXd4Udj6iRyJ" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+  </section>
+
+  <a class="regresar" href="index.html">⬅ Regresar</a>
+
+  <div class="confeti" aria-hidden="true"></div>
+  <script>
+    (function makeConfetti(){
+      const n = 60;
+      const container = document.querySelector('.confeti');
+      for(let i=0;i<n;i++){
+        const s = document.createElement('span');
+        s.className = 'confetti-piece';
+        s.style.left = Math.random()*100 + 'vw';
+        s.style.setProperty('--h', Math.floor(Math.random()*360));
+        s.style.animationDelay = (Math.random()*3) + 's';
+        container.appendChild(s);
+      }
+    })();
+  </script>
+</body>
+</html>

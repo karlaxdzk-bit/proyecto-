@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DeepSeek — Modelos de IA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="chatgpt.html">ChatGPT</a>
+    <a href="claude.html">Claude</a>
+    <a href="deepseek.html">DeepSeek</a>
+    <a href="qwen.html">Qwen</a>
+  </nav>
+
+  <div class="submenu">
+    <a href="#info">Información</a>
+    <a href="#galeria">Galería</a>
+  </div>
+
+  <section class="gradiente">
+    <div class="contenido" id="info">
+      <h1>GALLOWAY</h1>
+      <p>emparentado con angus segun un libro genealogico.</p>
+    </div>
+
+    <div class="contenido" id="galeria">
+      <h2>Imágenes</h2>
+      <img src="g.jpg" alt="DeepSeek 1">
+      <img src="gg.jpg" alt="DeepSeek 2">
+      <img src="ggg.jpg" alt="DeepSeek 3">
+
+      <h2>Video</h2>
+      <video controls>
+        <source src="https://rr5---sn-uvu5a2a5t-uaje.googlevideo.com/videoplayback?expire=1764727298&ei=okUvaZ7BHMeWsfIPgvnVkQU&ip=2a0f%3A85c1%3Aba5%3Ad55b%3A3260%3A4988%3A3ba6%3A84e6&id=o-AGfuljMsqyUWc-Bd4kWjrJNrz3Sct6JGhVWPiScVjPE6&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=0&rms=au%2Cau&bui=AdEuB5QNF4EmIXzeFcQJ2eZc2mIk7niajHXYJwidDisfsyAJGEYr27oHzbCAsam-vrTFp65Qy3JqTOD2&vprv=1&svpuc=1&xtags=heaudio%3Dtrue&mime=video%2Fmp4&ns=NiulkuuLgC4A4E4bDozp_r4Q&rqh=1&cnr=14&ratebypass=yes&dur=49.690&lmt=1749769139771201&lmw=1&fexp=51557447,51565116,51565682,51580970&c=TVHTML5&sefc=1&txp=6310224&n=y6XDKy2uTg9KqA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cxtags%2Cmime%2Cns%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIhAPBQiG_Z2qkyM4UAM4dnJWO7VRQdUcTOjzK--w3oMjewAiAz1zD8q7Bn2Zm7sdWdgz1Z_BskKyueQgmUIdrFdUD6mw%3D%3D&redirect_counter=1&rm=sn-a5myk7l&rrc=104&req_id=40dbdbc58d1ea3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&met=1764705707,&mh=pa&mip=187.251.123.162&mm=31&mn=sn-uvu5a2a5t-uaje&ms=au&mt=1764705448&mv=m&mvi=5&pl=24&lsparams=cps,ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgMcSNxc2H6gklZ4zklABErs8VP64RtuxIidqv-mcPC84CIQDmYjLLQwinVfRkPF205ao82SlG4dPhfZtC6KhkgXhoIQ%3D%3D" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+  </section>
+
+  <a class="regresar" href="index.html">⬅ Regresar</a>
+
+  <div class="confeti" aria-hidden="true"></div>
+  <script>
+    (function makeConfetti(){
+      const n = 60;
+      const container = document.querySelector('.confeti');
+      for(let i=0;i<n;i++){
+        const s = document.createElement('span');
+        s.className = 'confetti-piece';
+        s.style.left = Math.random()*100 + 'vw';
+        s.style.setProperty('--h', Math.floor(Math.random()*360));
+        s.style.animationDelay = (Math.random()*3) + 's';
+        container.appendChild(s);
+      }
+    })();
+  </script>
+</body>
+</html>
